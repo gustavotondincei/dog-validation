@@ -21,17 +21,17 @@ cont.addEventListener('keypress', () => {
 dog.addEventListener('keydown', (e) => {
     if (e.key !== 'Enter') return;
 
-    if (dog.value.toLowerCase() === 'yes') {
+    if (dog.value.toLowerCase() === 'yes' || dog.value.toLowerCase() === 'si' || dog.value.toLowerCase() === 'sí') {
         result.innerHTML = `
             <p class="result-title">DOG DETECTED</p>
-            <p>COMIDA.html granted</p>
-            <p>You may proceed to lunch.</p>
+            <p>permisoComida = 'true'</p>
+            <p>puedes ir a la comida.</p>
         `;
     } else {
         result.innerHTML = `
-            <p class="result-title red">ERROR 403 — DOG NOT FOUND</p>
-            <p>COMIDA.html denied</p>
-            <p>Please acquire dog and try again</p>
+            <p class="result-title red">ERROR 403 - 'DOG' NOT FOUND</p>
+            <p>permisoComida = 'false'</p>
+            <p>Por favor, vuelve a intentarlo.</p>
         `;
     }
 
