@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dog-validation</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+ <section class="terminal">
+    <div class="terminal__header">
+        <div class="header__btns">
+            <div class="header-btn header-btn--red"></div>
+            <div class="header-btn header-btn--yellow"></div>
+            <div class="header-btn header-btn--green"></div>
+        </div>  
+        <h2>dog-validation panel</h2>
+    </div>
+    <div class="terminal__body" id="terminal">
+        <p class="yellow">Press enter to start</p>
+        <div class="terminal__line">
+            <span>></span>
+            <input autocomplete="off" class="terminal__input" id="startInput">
+        </div>
+        <div class="terminal__content">
+            <div class="terminal__indent1" id="indent1">
+                <p>Checking professor rules...</p>
+                <br>
+                <p>Rule #1: Pau must bring dog</p>
+                <br>
+                <p class="yellow">Press enter to continue</p>
+                <div class="terminal__line">
+                    <span>></span>
+                    <input autocomplete="off" class="terminal__input" id="continueInput">
+                </div>
+            </div>
+            <div class="terminal__indent2" id="indent2">
+                <p class="options">Did you bring the dog?  (yes/no)</p>
+                <div class="terminal__line">
+                    <span>></span>
+                    <input autocomplete="off" class="terminal__input" id="dogInput">
+                </div>
+            </div>
+            <div class="result" id="result">
+
+            </div>
+        </div>
+    </div>
+ </section>
+</body>
+</html>
