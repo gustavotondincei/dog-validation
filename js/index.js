@@ -34,7 +34,5 @@ dog.addEventListener('keydown', (e) => {
             <p>Por favor, vuelve a intentarlo.</p>
         `;
     }
-
-    terminal.appendChild(result);
     dog.disabled = true;
 });
